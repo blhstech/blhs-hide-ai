@@ -1,0 +1,24 @@
+/*
+ * Bing. Selectors taken from www.bing.com on 2026-10-26, signed out and signed in.
+ */
+
+/* "AI Overview" summary at the top of results, including its source cards.
+   :has() hides the whole result slot so no empty gap is left behind. */
+li.b_ans:has(#copans_container),
+#copans_container,
+[role="region"][aria-label="Copilot Search"],
+/* "AI Mode" tab in the results scope bar (links to /copilotsearch) */
+#b-scopeListItem-copilotsearch,
+/* AI-generated answer at the top of results ("Content was generated with AI") */
+#b_copilot_search_container,
+.b_copilot_search,
+/* "Ask Copilot" follow-up bar under the answer */
+#b_copilot_search,
+.b_bop_cs_sb,
+/* Copilot button in the homepage menu (links to /chat -> copilot.microsoft.com) */
+#codex,
+/* Any other links into AI Mode or Copilot */
+a[href^="/copilotsearch"],
+a[href^="/chat"] {
+  display: none !important;
+}

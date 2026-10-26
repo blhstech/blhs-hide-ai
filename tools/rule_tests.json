@@ -1,0 +1,17 @@
+[
+  {"url": "https://www.google.com/search?q=what+causes+the+seasons&udm=50", "to": "https://www.google.com/search?q=what+causes+the+seasons"},
+  {"url": "https://www.google.com/search?udm=50&aep=11", "to": "https://www.google.com/search"},
+  {"url": "https://www.google.co.uk/search?udm=50&q=test&source=hp", "to": "https://www.google.co.uk/search?q=test&source=hp"},
+  {"url": "https://www.google.com/search?q=test&udm=500", "to": null},
+  {"url": "https://www.google.com/search?q=test&udm=14", "to": null},
+  {"url": "https://www.google.com/search?q=test", "to": null},
+  {"url": "https://www.google.com/ai", "to": "https://www.google.com/"},
+  {"url": "https://www.google.com/aimode", "to": "https://www.google.com/"},
+  {"url": "https://www.google.com/aimode?q=x", "to": "https://www.google.com/"},
+  {"url": "https://www.google.com/aircraft", "to": null},
+  {"url": "https://www.bing.com/copilotsearch?q=what+causes+the+seasons&FORM=CSSCOP", "to": "https://www.bing.com/search?q=what+causes+the+seasons&FORM=CSSCOP"},
+  {"url": "https://bing.com/copilotsearch", "to": "https://www.bing.com/search?"},
+  {"url": "https://www.bing.com/chat?FORM=hpcodx&intent=bing", "to": "https://www.bing.com/"},
+  {"url": "https://www.bing.com/search?q=chat", "to": null},
+  {"url": "https://www.bing.com/chatbots", "to": null}
+]

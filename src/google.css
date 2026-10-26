@@ -1,0 +1,45 @@
+/*
+ * Google Search. Selectors come from hide-google-ai v1.1.2 (MIT, Asahi Suenaga).
+ * Google's class names are obfuscated and change without notice; when something
+ * reappears, compare against https://github.com/asahisuenaga/hide-google-ai
+ */
+
+/* AI Mode tab, AI Mode buttons */
+.olrp5b,
+[jscontroller="Elkdbc"],
+button.plR5qb,
+/* AI Overview, AI answers inside "People also ask" */
+.Wm5I1e,
+.related-question-pair:has(.XTvndd),
+.hdzaWe {
+  display: none !important;
+}
+
+.hdzaWe {
+  visibility: hidden !important;
+  height: 0 !important;
+}
+
+/* BLHS: "People also ask" entirely, not just its AI answers.
+   data-initq (the original query) is only on the PAA container; the .MjjYud
+   result wrapper around it is hidden too so no gap is left. Checked 2026-10-26. */
+[data-initq],
+.MjjYud:has([data-initq]),
+.related-question-pair {
+  display: none !important;
+}
+
+/* Homepage only (google.js sets data-blhs-page="home") */
+html[data-blhs-page="home"] .plR5qb {
+  display: none !important;
+}
+
+html[data-blhs-page="home"] .dRYYxd {
+  background: none !important;
+}
+
+/* The "+" button next to the search box opens AI Mode */
+html[data-blhs-page="home"] .UbbAWe {
+  pointer-events: none !important;
+  cursor: default !important;
+}

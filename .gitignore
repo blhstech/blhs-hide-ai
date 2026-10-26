@@ -1,0 +1,5 @@
+# Never commit the signing key or page captures
+*.pem
+*.key
+captures/
+__pycache__/
